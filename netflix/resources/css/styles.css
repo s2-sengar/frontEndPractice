@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
+.clearfix{zoom: 1;}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 html{
     font-size: 16px;
     font-family: 'Lato', sans-serif;
@@ -195,4 +202,47 @@ section{
 .for-kids p{
     font-size: 1.1rem;
     font-weight: 500;
+}
+.quesCard{
+    font-size: 1.3rem;
+    width: 100%;
+}
+.quesCard__ques img{
+    height: 2rem;
+    width: 2rem;
+    float: right;
+    
+}
+.quesCard__ques p{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.quesCard__ques img:last-child{
+    display: none;
+}
+.quesCard__ques{
+    background-color: rgb(26, 26, 26);
+    position: relative;
+    padding: 1rem .9rem .8rem .9rem;
+    height: 2rem;
+}
+.quesCard__ans{
+    /* display: block; */
+    display: none;
+    position: absolute;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-top: 0.5px;
+    background-color: rgb(26, 26, 26);
+}
+.quesCard__ans p{
+    padding: 1rem .9rem;
+}
+.quesCard{
+    position: relative;
+    margin-bottom: .4rem;
+}
+.faq:last-child{
+    margin-bottom: 0;
 }
