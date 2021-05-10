@@ -28,6 +28,10 @@ html{
     max-width: 440px;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 img{
     width: 100%;
 }
@@ -230,11 +234,13 @@ section{
 .quesCard__ans{
     /* display: block; */
     display: none;
-    position: absolute;
+    max-height: 0;
+    /* position: absolute; */
     font-size: 1.1rem;
     text-align: left;
-    margin-top: 0.5px;
+    margin-top: 1px;
     background-color: rgb(26, 26, 26);
+    /* transition: display 4s; */
 }
 .quesCard__ans p{
     padding: 1rem .9rem;
@@ -245,4 +251,20 @@ section{
 }
 .faq:last-child{
     margin-bottom: 0;
+}
+.quesCard:target .quesCard__ans{
+    display: block;
+    max-height: 40rem;
+    /* height: 100rem; */
+    
+}
+
+.quesCard:target .quesCard__ques img{
+    display: none;
+}
+.quesCard:target .quesCard__ques img:last-child{
+    display: block;
+}
+.subscribe{
+    margin-top: 0;
 }
