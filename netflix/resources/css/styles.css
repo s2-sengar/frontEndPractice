@@ -10,13 +10,14 @@
     height: 0;
     visibility: hidden;
 }
-html{
+html,body{
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     word-spacing: 0.1em;
     font-weight: 500;
     color: white;    
     background-color: rgb(26, 26, 26);
+    overflow-x: hidden;
 }
 
 .row{
@@ -132,9 +133,10 @@ header{
     display: block;
     color: white;
     text-decoration: none;
+    font-size: 1rem;
     background-color: #e50914;
-    padding: .7rem .3rem;
-    width: 10rem;
+    padding: .7rem 1rem;
+    width: 8rem;
     margin: 0 auto;
     border-radius: 0.2rem;
     
@@ -153,10 +155,12 @@ header{
 }
 /* --------sections------- */
 section{
+    /* display: flex; */
     background-color: black;
     margin:.5rem 0rem;
     padding: 2.5rem 0rem;
     text-align: center;
+    /* height:max-content; */
 }
 .sec-image{
     width: 100%;
@@ -267,4 +271,177 @@ section{
 }
 .subscribe{
     margin-top: 0;
+}
+/* .col{
+    width: 100%;
+} */
+.foo-bar{
+    display: block;
+}
+.order-1{
+    display: grid;
+    order: 1;
+}
+.order-2{
+    display: grid;
+    order: 2;
+}
+
+
+
+@media only screen and (max-width:839px){
+    .col{
+        width: 100%;
+    }
+    .foo-bar{
+        margin-bottom: 7rem;
+    }
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+    }
+}
+
+
+
+
+
+
+/* Responsive */
+/* @media only screen and(max-width:400px){
+    html{
+        font-size: 500px;
+    }
+    .header-text{
+        font-size: 2rem;
+    } */
+/* } */
+
+@media only screen and (min-width:556px){
+    html{
+        font-size: 20px;
+    }
+    header{
+        height: 700px;
+    }
+    .head-para{
+        font-size: 1.5rem;
+    }
+    .subscribe-input-wrapper p{
+        font-size: 1rem;
+    }
+    .header-content{
+        max-width: 500px;
+        padding: 0 2rem;
+    }
+    .input-wrapper input{
+        height: 2rem;
+    }
+    .input-wrapper input::placeholder{
+        font-size: 0.75rem;
+    }
+    .btn-getStarted{
+        font-size: 0.9rem;
+        padding: .6rem .4rem;
+        width: 7rem;
+    }
+    .foo-bar{
+        margin-bottom: 4rem;
+    }
+    /* .header-text{
+        font-size: 2.5rem;
+    } */
+    /* .col{
+        width: 50px;
+    } */
+}
+
+@media only screen and (min-width:840px){
+    html{
+        font-size: 25px;
+    }
+    .header-content, .faq-wrapper{
+        max-width: 830px;
+        padding: 0 2rem;
+    }
+    .faq-wrapper{
+        margin: 0 auto;
+    }
+    .quesCard{
+        font-size: .9rem;
+    }
+    .quesCard__ques{
+        padding: .6rem .7rem .2rem .7rem;
+        height: 1.8rem;
+    }
+    .quesCard__ans{
+        font-size: .9rem;
+    }
+    .quesCard__ques img{
+        height: 1.5rem;
+        width: 1.5rem;
+        float: right;
+        
+    }
+    .input__item{
+        margin: 1px;
+        padding: 1px;
+    }
+    .logo{
+        width: 5.6rem;
+    }
+    .nav-buttons{
+        float: right;
+        margin-top: 30px;
+        margin-right: 5vw;
+        
+    }
+    .nav-buttons img{
+        margin: 0;
+        padding: 0;
+        width: .6rem;
+    }
+    .nav-buttons:first-child{
+        width: 1rem;
+        height: auto ;
+    
+    }
+    .btn-small{
+        font-size: 0.6rem;
+        padding:0.3em 0.5em ;
+        border: 0.05em solid #e50914;
+        /* margin-top:20px; */
+    }
+    .btn-small-drop{
+        font-size: 0.6rem;
+        padding: 0.3em 0.5em;
+        border: 0.05em solid white;
+        margin-right: 0.8em;
+        /* margin-top:20px;     */
+    }
+    /* .input-wrapper{
+        display: flex;
+    } */
+    /* section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .content-text{
+        margin-top: 10%;
+        /* height: auto;
+        width: auto;
+        margin: auto; */
+        /* display: flex; */
+        /* justify-content: center;
+        align-items: center; */
+    }
+    /* .content-text h2{
+        display: block;
+    }
+    .content-text p{
+        display: block;
+    } */
 }
