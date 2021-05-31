@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@400;700&display=swap');
+
+$color-primary:#272727;
+$color-success:#63C132;
+$color-failure:#EB5E55;
+$color-head:#ffbe26;
+$color-text:#FDF0D5;
+$color-response:#C6D8D3;
+$color-response-text:#2F1B25;
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    body{
+        font-family: 'Poppins', sans-serif;
+        font-size: .625em;
+        background-color: $color-primary;
+        color: $color-text;
+    }
+}
+a{
+    color: white;
+}
+h1{
+    font-family: 'Odibee Sans',sans-serif;
+    letter-spacing: 3.5;
+    font-size: 10em;
+    text-align: center;
+    color: $color-success;
+    padding:.2em 0;
+}
+.hide{
+    display: none;
+}
+header,.response{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    input{
+        padding: .7em;
+        width: 60%;
+        max-width:28em;
+        font-size: 1.4em;
+        &:focus{
+            outline: none;
+        }
+        border: none;
+        color:$color-response-text;
+        background-color:$color-response ;
+    }
+    .result{
+        margin-top: 1.5em;
+        width: 60%;
+        max-width: 28em;
+        text-align: center;
+        padding: .5em;
+        font-size: 1.4em;
+        background: $color-success;
+    }
+    .failure{
+        background: $color-failure;
+    }
+    .buttons{
+        display: block;
+        margin-top: 2em;
+        font-size: 1.4em;
+        a{
+            text-decoration: none;
+        }
+        .btn--active{
+            padding: .5em 1em;
+            border: 1px solid $color-success;
+            background-color: $color-success;
+            margin-right: 1em;
+        }
+        .btn--secondary{
+            color: #ff4e41;
+            padding: .5em 1em;
+            border: 1px solid $color-failure;
+        }
+    }
+}
+.response{
+    width: 60%;
+    max-width: 280em;
+    margin: 4em auto 0 auto;
+    p{
+        margin-bottom: .5em;
+        padding: .5em;
+        text-align: center;
+        font-size: 1.4em;
+        width: 100%;
+        max-width: 28em;
+        background-color: $color-response;
+        color: $color-response-text;
+    }
+}
